@@ -1,0 +1,162 @@
+.navbar-logo{
+    mix-blend-mode: multiply;
+}
+
+.navbar-color{
+    background-color: #E2DAD6;
+}
+
+.nav-item-hover {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.nav-item-hover:hover {
+    background-color: #F5EDED; /* Change background color on hover */
+    border-radius: 10px;
+}  
+
+.padding-top{
+    margin-top:80px
+}
+
+.img-circle1{
+    border-radius:8rem;
+}
+
+.img-circle2{
+    display:block;
+    border-radius:120px;
+    padding-top:60px;
+}
+
+.center-color{
+    background-color: #6482AD;
+}
+
+.center-colortwo{
+    background-color: #7FA1C3;
+    padding-bottom:50px;
+}
+
+@media (max-width: 600px) {
+    .center-color {
+        text-align: center;
+    }
+
+    .padding-top {
+        margin-top: 40px;
+    }
+
+    .img-circle2 {
+        display: none;
+        border-radius: 10px;
+    }
+
+    .verticallineadd,
+    .vertical-line,
+    .work-exp1::before,
+    .work-exp2::after {
+        display: none;
+    }
+   
+}
+
+.verticallineadd {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.work-exp1 {
+    position: relative;
+}
+
+.work-exp2 {
+    position: relative;
+}
+
+.vertical-line {
+    display: block;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    border-radius:8px;
+}
+
+.work-exp1::before,
+.work-exp2::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 45px;
+    height: 0;
+    width: 0;
+    z-index: 1;
+}
+
+.work-exp1::before{
+    top:21%;
+}
+
+.work-exp2::after{
+    top:76%
+}
+
+.work-exp1::before {
+    left: 100%;
+    border-color: transparent transparent transparent white;
+}
+
+.work-exp2::after {
+    right: 100%;
+    border-color: transparent white transparent transparent;
+}
+
+.divider{
+    height: 1px;
+    background-color: white;
+}
+
+.services-icon{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    font-size:30px;
+    color: black;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+/* Different hover colors for each icon */
+.services-icon:nth-child(1) i:hover {
+    color: red; /* HTML5 orange */
+}
+
+.services-icon:nth-child(2) i:hover {
+    color: blue; /* CSS3 blue */
+}
+
+.services-icon:nth-child(3) i:hover {
+    color: rgb(223, 223, 120); /* JavaScript yellow */
+}
+
+.services-icon:nth-child(4) i:hover {
+    color: violet; /* PHP purple */
+}
+
+.services-icon:nth-child(5) i:hover {
+    color: #f29111; /* Database orange */
+}
+
+.scrollable-card{
+    max-height:500px;
+    overflow-y: auto;
+}
+
+.change-color{
+    background-color: #6482AD;
+}
