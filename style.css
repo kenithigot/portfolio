@@ -1,8 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar-logo{
     mix-blend-mode: multiply;
 }
 
-.navbar-color{
+.bg-color{
     background-color: #E2DAD6;
 }
 
@@ -12,7 +16,7 @@
 }
 
 .nav-item-hover:hover {
-    background-color: #F5EDED; /* Change background color on hover */
+    background-color: #F5EDED; 
     border-radius: 10px;
 }  
 
@@ -131,25 +135,25 @@
     transition: color 0.3s;
 }
 
-/* Different hover colors for each icon */
+ /* Icon Services nth-child */
 .services-icon:nth-child(1) i:hover {
-    color: red; /* HTML5 orange */
+    color: red;
 }
 
 .services-icon:nth-child(2) i:hover {
-    color: blue; /* CSS3 blue */
+    color: blue;
 }
 
 .services-icon:nth-child(3) i:hover {
-    color: rgb(223, 223, 120); /* JavaScript yellow */
+    color: rgb(223, 223, 120); 
 }
 
 .services-icon:nth-child(4) i:hover {
-    color: violet; /* PHP purple */
+    color: violet; 
 }
 
 .services-icon:nth-child(5) i:hover {
-    color: #f29111; /* Database orange */
+    color: #f29111; 
 }
 
 .scrollable-card{
@@ -159,4 +163,38 @@
 
 .change-color{
     background-color: #6482AD;
+}
+
+.filtered-img{
+    filter: drop-shadow(5px 20px 29px rgba(0, 0, 0, 0.6));  
+};
+
+.border-add{
+    border-top:1px solid black;
+}
+
+.icon-color{
+    height: 35px;
+    width: 35px;
+}
+
+/* Icon nth-child */
+ul.list-unstyled li:nth-child(1) a {
+    background-color: #0d6efd; 
+}
+ul.list-unstyled li:nth-child(2) a {
+    background-color: #000; 
+}
+ul.list-unstyled li:nth-child(3) a {
+    background-color: #0077b5; 
+}
+ul.list-unstyled li:nth-child(4) a {
+    background-color: #ff4500; 
+}
+
+#aboutMe, #servicesMe, #projectsMe {
+    position: relative;
+    padding-top: 70px; 
+    margin-top: -70px; 
+    scroll-behavior: smooth;
 }
