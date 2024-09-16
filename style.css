@@ -198,3 +198,7 @@ ul.list-unstyled li:nth-child(4) a {
     margin-top: -70px; 
     scroll-behavior: smooth;
 }
+
+.btn-style a{
+    border: 1px solid gray;
+}
